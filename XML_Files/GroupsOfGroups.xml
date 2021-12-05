@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <define name="Entertainment">
+  
+  <include name="Social Media"></include>
+  
+  <include name="Music"></include>
+  
+  </define>
+  <define name="Purchase">
+  
+  <include name="Books"></include>
+  
+  <include name="Shopping"></include>
+  
+  </define>
+  <run>
+  
+  <include name="Entertainment"></include>
+  </run>
+  
+  </groups>
+    <classes>
+      <class name="com.testng.features.Grouping_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
